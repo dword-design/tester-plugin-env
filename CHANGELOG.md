@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/dword-design/tester-plugin-env/compare/v1.0.3...v1.0.4) (2021-04-28)
+
+
+### Bug Fixes
+
+* updated package.json[description] ([#7](https://github.com/dword-design/tester-plugin-env/issues/7)) ([d0b30c1](https://github.com/dword-design/tester-plugin-env/commit/d0b30c1444c1f6177f745f34c834569d65eda6e7))
+
 ## [1.0.3](https://github.com/dword-design/tester-plugin-env/compare/v1.0.2...v1.0.3) (2021-04-22)
 
 
