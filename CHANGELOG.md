@@ -1,3 +1,19 @@
+# [2.0.0](https://github.com/dword-design/tester-plugin-env/compare/v1.0.4...v2.0.0) (2021-05-03)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/base to v8 ([#10](https://github.com/dword-design/tester-plugin-env/issues/10)) ([4280396](https://github.com/dword-design/tester-plugin-env/commit/4280396abef4a1d3a389145113cb3db93f6fa583))
+
+
+### BREAKING CHANGES
+
+* require Node.js >= 12
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+Co-authored-by: Sebastian Landwehr <info@dword-design.de>
+Co-authored-by: GitHub Actions <actions@github.com>
+
 ## [1.0.4](https://github.com/dword-design/tester-plugin-env/compare/v1.0.3...v1.0.4) (2021-04-28)
 
 
