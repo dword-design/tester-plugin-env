@@ -1,3 +1,11 @@
+## [2.0.2](https://github.com/dword-design/tester-plugin-env/compare/v2.0.1...v2.0.2) (2021-05-04)
+
+
+### Bug Fixes
+
+* update dependency depcheck-package-name to v2 ([#14](https://github.com/dword-design/tester-plugin-env/issues/14)) ([8264994](https://github.com/dword-design/tester-plugin-env/commit/826499499f01498d3f76c3b28a03d7c7972ee3ec))
+* update dependency fs-extra to v10 ([#15](https://github.com/dword-design/tester-plugin-env/issues/15)) ([edd3c46](https://github.com/dword-design/tester-plugin-env/commit/edd3c46c0a07ed327d5d560dc07ee091b08ea334))
+
 ## [2.0.1](https://github.com/dword-design/tester-plugin-env/compare/v2.0.0...v2.0.1) (2021-05-04)
 
 
