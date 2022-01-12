@@ -1,3 +1,10 @@
+## [2.0.10](https://github.com/dword-design/tester-plugin-env/compare/v2.0.9...v2.0.10) (2022-01-12)
+
+
+### Bug Fixes
+
+* update config files ([229892a](https://github.com/dword-design/tester-plugin-env/commit/229892a47ac2a31e30d0d5bdd1adbeb5e63b4093))
+
 ## [2.0.9](https://github.com/dword-design/tester-plugin-env/compare/v2.0.8...v2.0.9) (2022-01-04)
 
 
