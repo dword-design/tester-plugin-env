@@ -2,18 +2,20 @@ import { endent } from '@dword-design/functions'
 import tester from '@dword-design/tester'
 import testerPluginTmpDir from '@dword-design/tester-plugin-tmp-dir'
 import packageName from 'depcheck-package-name'
-import { execa } from 'execa'
-import fs from 'fs-extra'
+import { execaCommand } from 'execa'
+import outputFiles from 'output-files'
 
 export default tester(
   {
     works: async () => {
-      await fs.outputFile(
-        'index.spec.js',
-        endent`
+      await outputFiles({
+        'index.spec.js': endent`
         import tester from '${packageName`@dword-design/tester`}'
         import P from 'path'
-        import self from '../src'
+        import { expect } from 'expect'
+
+        import self from '../src/index.js'
+        
         export default tester({
           test1: () => {
             expect(process.env.FOO).toEqual('bar')
@@ -24,13 +26,12 @@ export default tester(
             expect(process.env.BAR).toBeUndefined()
           },
         }, [self()])
-      `
-      )
-      await execa(
-        'mocha',
-        ['--ui', packageName`mocha-ui-exports-auto-describe`, 'index.spec.js'],
-        { env: { FOO: 'bar' } }
-      )
+      `,
+        'package.json': JSON.stringify({ type: 'module' }),
+      })
+      await execaCommand('mocha --ui exports index.spec.js', {
+        env: { FOO: 'bar' },
+      })
     },
   },
   [testerPluginTmpDir()]
