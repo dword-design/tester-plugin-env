@@ -2,13 +2,13 @@ import { endent } from '@dword-design/functions'
 import tester from '@dword-design/tester'
 import testerPluginTmpDir from '@dword-design/tester-plugin-tmp-dir'
 import packageName from 'depcheck-package-name'
-import execa from 'execa'
-import { outputFile } from 'fs-extra'
+import { execa } from 'execa'
+import fs from 'fs-extra'
 
 export default tester(
   {
     works: async () => {
-      await outputFile(
+      await fs.outputFile(
         'index.spec.js',
         endent`
         import tester from '${packageName`@dword-design/tester`}'
