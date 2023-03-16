@@ -1,3 +1,10 @@
+## [2.0.14](https://github.com/dword-design/tester-plugin-env/compare/v2.0.13...v2.0.14) (2023-03-16)
+
+
+### Bug Fixes
+
+* update dependency @dword-design/tester-plugin-tmp-dir to v2.1.12 ([0f9924f](https://github.com/dword-design/tester-plugin-env/commit/0f9924f4bb438dd322c9a18fb06f6c361530a246))
+
 ## [2.0.13](https://github.com/dword-design/tester-plugin-env/compare/v2.0.12...v2.0.13) (2023-03-16)
 
 
